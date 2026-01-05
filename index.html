@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookNest | Online Bookstore</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📚 BookNest</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Books</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle">🌙</button>
+        <span class="cart">🛒 Cart: <span id="cartCount">0</span></span>
+      </div>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section id="home">
+        <h2 id="greeting">Dear Reader</h2>
+        <p id="date"></p>
+        <p style="justify-content: center; align-items: center">
+          Your favorite place for inspiring reads. Welcome to Book Nest Where
+          Stories Find a Home At Book Nest, we believe every book has the power
+          to inspire, educate, and transform lives. Our independent online
+          bookstore is dedicated to nurturing a strong reading culture by making
+          books affordable, accessible, and meaningful for everyone. Whether
+          you’re seeking knowledge, inspiration, or a great escape, you’ll find
+          carefully selected titles that spark curiosity and fuel imagination.
+          Book Nest is more than a bookstore — it’s a community of readers who
+          value learning and growth. From educational resources to uplifting
+          stories, we bring books that enrich minds and open new perspectives,
+          delivered right to your doorstep. Settle in, explore, and discover
+          your next favorite read. Because every great story deserves a place to
+          belong — and every reader deserves a Book Nest. 📚✨
+        </p>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section id="products">
+        <h2 style="justify-content: center">Available Books</h2>
+
+        <div class="product-grid">
+          <article class="product">
+            <img src="The Art Of Thinking Clearly.jpg" alt="Book 1" />
+            <h3>The Art of Thinking Clearly</h3>
+            <p>A guide to better decision-making.</p>
+            <span class="price">KES 1,200</span>
+            <button class="addToCart">Add to Cart</button>
+          </article>
+
+          <article class="product">
+            <img src="Mastering JavaScript.jpg" alt="Book 2" />
+            <h3>Mastering JavaScript</h3>
+            <p>Learn modern JavaScript from scratch.</p>
+            <span class="price">KES 1,800</span>
+            <button class="addToCart">Add to Cart</button>
+          </article>
+
+          <article class="product">
+            <img src="Creative Habits.jpg" alt="Book 3" />
+            <h3>The Creative Habit</h3>
+            <p>Build habits that unlock creativity.</p>
+            <span class="price">KES 1,500</span>
+            <button class="addToCart">Add to Cart</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <h2 style="justify-content: center">About BookNest</h2>
+        <p style="justify-content: center">
+          Book Nest is an independent online bookstore created to nurture a
+          vibrant reading culture for readers of all ages. Built on the belief
+          that books should be accessible to everyone, Book Nest offers a
+          carefully curated collection of affordable, inspiring, and educational
+          titles across diverse genres. From timeless classics to contemporary
+          voices, every book is selected to spark curiosity, encourage critical
+          thinking, and support lifelong learning. As an online platform, Book
+          Nest makes discovering and purchasing books simple and convenient,
+          bringing stories and knowledge directly to your doorstep. Beyond
+          selling books, Book Nest is a community that celebrates readers,
+          writers, and the power of ideas. It aims to inspire imagination,
+          empower minds, and foster meaningful connections through reading. By
+          combining quality selections with fair pricing and a passion for
+          education, Book Nest stands as a welcoming space where stories are
+          cherished and learning is always within reach for everyone everywhere.
+        </p>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+          <label>
+            Name:
+            <input type="text" id="name" required />
+          </label>
+
+          <label>
+            Email:
+            <input type="email" id="email" required />
+          </label>
+
+          <label>
+            Message:
+            <textarea id="message" required></textarea>
+          </label>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 BookNest. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
